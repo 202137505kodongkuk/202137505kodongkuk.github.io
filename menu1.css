@@ -10,9 +10,10 @@
 
 .topbar{
 	background-image: url("상단바.jpg");	
-	width: 100%;
+	width: 2000px;
 	height: 900px;
 	background-repeat: no-repeat;
+
 
 
 }
@@ -21,7 +22,6 @@
 	display: flex; // 가로로 배열
 	width: 1200px;
 	margin: auto; // 가운데 배열
-	background: red;
 	height: 86px;
 }
 
@@ -40,6 +40,7 @@
 	color: black;
 	padding-left: 10px; // 검색어 입력창을 약간 왼쪽으로
 
+
 }
 
 searchbar > form > button{
@@ -51,7 +52,7 @@ searchbar > form > button{
 
 .nav{
 	display: flex; //가로 및 가운데 배열
-	width: 400px;
+	width: 500px;
 	justify-content: flex-end; // div 박스안에서 끝 쪽으로 배열
 	line-height: 100px; // 높이를 아래로 내리기
 	
@@ -60,11 +61,57 @@ searchbar > form > button{
 }
 
 .nav > li{
-	margin-left:84px; // 좌측 배열 및 각각 띄어쓰기 
+	margin-left:84px; // 좌측 배열 및 각각 띄어쓰기
+
 
 }
 
 .nav > li > a{
  color: black;
 text-decoration: none;
+}
+
+.sidebar{
+	
+	display: block;
+  border:none;
+  height: 600px;
+  width: 100%;
+
+}
+
+.tablemenu{
+	display: inline-block;
+}
+
+.btn_prev{
+	left: 0;
+	background-image: url("right cursor");
+	no-repeat: 50%;
+}
+
+.btn_next{
+	right: 0;
+	background-image: url("left curosr");
+	no-repeat: 50%
+}
+
+
+.btn_swiper{
+	postion: absolute;
+	top: 50%;
+	width: 60px;
+	margin-top: -30px;
+	text-indent: -9999em;
+	z-index: 10;
+}
+
+.button1{
+	margin: 0;
+	font-size: 1em;
+	font-family: 'Lobster', cursive;
+	vertical-align: middle;
+	border: none;
+	overflow: visible;
+	cursor: pointer;
 }
