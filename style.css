@@ -1,3 +1,8 @@
+body{
+  margin: 0;
+
+}
+
 /* 상단바 스타일링 */
     .navbar {
       background-color: black;
@@ -123,7 +128,6 @@
   height: 800px;
   width: 100%;
 }
-
 .new-rewards_wrap {
     padding-top: 110px;
     padding-bottom: 110px;
@@ -153,13 +157,49 @@
     margin-bottom: 12px;
 }
 
+h1{
+  font-size: 6em;
+  width: 258px;
+  color: white;
+  font-family: sans-serif;
+  position: absolute; /*h1 자체의 마진이 있어 어느정도 내려옴*/
+  top: 80px;
+  left: 200px;
+  animation: slide 2s ease-out;
+}
+
 h2 {
+    font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 100%;
     margin: 0;
+}
+
+@keyframes slide{
+  from{
+    left:-100px;
+    opacity: 0;
+  }
+  to{
+     left: 200px;
+     opacity: 1;
+  }
+}
+
+@keyframes back{
+  from{
+    left: 200px;
+     opacity: 1;
+
+  }
+  to{
+    left:-100px;
+    opacity: 0;
+
+  }
 }
 
 .copyright {
