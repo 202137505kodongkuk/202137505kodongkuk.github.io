@@ -70,14 +70,6 @@ body{
       font-size: 20px;}
 
 
-
-.iframe-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 비율을 유지하려면 9을 16으로 나눈 값인 56.25%로 설정 */
-    height: 0;
-    overflow: hidden;
-  }
-
   .coffee {
     margin-left: 100px;
     margin-top: 5px;
@@ -94,14 +86,12 @@ body{
     position: relative;
   }
 
-  .coffee iframe {
-    position: flex;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
+  #tablerow{
+    display: flex;
+  justify-content: center;
   }
+
+ 
 
 #mainwrap1{
   background: url("hamburger.jpg") center/cover no-repeat;
@@ -131,7 +121,7 @@ body{
 .new-rewards_wrap {
     padding-top: 110px;
     padding-bottom: 110px;
-    background-color: royalblue;
+    background-color: lightslategray;
 }
 
 .new-rewards_inner {
