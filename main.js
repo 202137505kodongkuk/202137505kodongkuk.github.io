@@ -5,7 +5,7 @@ window.addEventListener("scroll", function() {
   let value = window.scrollY;
   console.log("scrollY", value);
 
-  if ((value > 3450 || value < 2000) && !initialScroll1) {
+  if ((value > 3900 || value < 2600) && !initialScroll1) {
     mainText1.style.animation = "back 2s ease-out forwards";
   } else {
     mainText1.style.animation = "slide 2s ease-out";
@@ -23,7 +23,7 @@ window.addEventListener("scroll", function() {
   let value = window.scrollY;
   console.log("scrollY", value);
 
-  if ((value > 4200 || value < 2800) && !initialScroll2) {
+  if ((value > 4700 || value < 3400) && !initialScroll2) {
     mainText2.style.animation = "back 2s ease-out forwards";
   } else {
     mainText2.style.animation = "slide 2s ease-out";
@@ -41,7 +41,7 @@ window.addEventListener("scroll", function() {
   let value = window.scrollY;
   console.log("scrollY", value);
 
-  if ((value > 5000 || value < 3600) && !initialScroll3) {
+  if ((value > 5500 || value < 4200) && !initialScroll3) {
     mainText3.style.animation = "back 2s ease-out forwards";
   } else {
     mainText3.style.animation = "slide 2s ease-out";
@@ -59,7 +59,7 @@ window.addEventListener("scroll", function() {
   let value = window.scrollY;
   console.log("scrollY", value);
 
-  if ((value > 5800 || value < 4400) && !initialScroll4) {
+  if ((value > 6300 || value < 5000) && !initialScroll4) {
     mainText4.style.animation = "back 2s ease-out forwards";
   } else {
     mainText4.style.animation = "slide 2s ease-out";
