@@ -1,34 +1,37 @@
 body{
-  margin: 0;
+  margin: 0; /* 기본 body 마진 8px 제거*/
 
 }
+
+
+
 
 /* 상단바 스타일링 */
     .navbar {
       background-color: black;
       color: white;
       height: 80px;
-      display: flex;
-      align-items: center;
+      display: flex;/* 메뉴들 정렬 */
+      align-items: center; /*flex컨테이너 내에서 flex 아이템들을 수직방향으로 가운데 정렬*/
       justify-content: center; /* 로고와 메뉴를 좌우로 배치 */
-      padding: 0 20px; /* 좌우 여백 */
-      margin: 0;
-      top: 0;
-      left: 0;
-      right: 0;
-
-    }
+      }
 
     .navbar-logo {
       font-size: 50px;
-      font-weight: bold;
-      text-decoration: none;
+      font-weight: bold;/* 텍스트 굵기 설정 */
+      text-decoration: none; /* 하이퍼 링크 줄 삭제 */
       color: white;
     }
+    
+    .navbar-logo:hover {
+  color: red;
+  transition: color 0.3s;
+}
+
 
     .navbar-menu {
-      display: flex;
-      list-style: none;
+      display: flex; /* 메뉴들 정렬 */
+      list-style: none; /* 하이퍼 링크 줄 삭제 */
       margin: 0;
       padding: 0;
     }
@@ -46,7 +49,7 @@ body{
       transition: color 0.3s, border-bottom-color 0.3s;
     }
 
-    .navbar-menu li a:before {
+    .navbar-menu li a:before{/*아랫 줄 나타나기*/
       content: '';
       position: absolute;
       bottom: -2px;
@@ -54,7 +57,7 @@ body{
       width: 100%;
       height: 2px;
       background-color: transparent;
-      transition: background-color 0.3s;
+      transition: background-color 0.8s;
     }
 
     .navbar-menu li a:hover {
@@ -71,25 +74,24 @@ body{
 
 
   .coffee {
-    margin-left: 100px;
-    margin-top: 5px;
-    margin-bottom: 50px;
-    border-radius: 30px;
-    box-shadow: 0 0px 10px rgba(0,0,0,0.08), 
-                0 0px 10px rgba(0,0,0,0.12), 
-                0 0px 10px rgba(0,0,0,0.16), 
-                0 8px 8px rgba(0,0,0,0.20);
-    background-color: white;
-    width: 400px;
-    height: 500px;
-    
-    position: relative;
-  }
+  margin-left: 100px; /* 왼쪽 여백 */
+  margin-top: 5px;/* 위쪽 여백 */
+  margin-bottom: 50px; /* 아래쪽 여백 */
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.08), 
+              0px 0px 10px rgba(0,0,0,0.12), 
+              0px 0px 10px rgba(0,0,0,0.16), 
+              0px 8px 8px rgba(0,0,0,0.20);
+ 
+  width: 500px;
+  height: 600px;
+}
 
-  #tablerow{
-    display: flex;
+#tablerow {
+  display: flex;
   justify-content: center;
-  }
+}
+
 
  
 
@@ -118,36 +120,33 @@ body{
   height: 800px;
   width: 100%;
 }
-.new-rewards_wrap {
-    padding-top: 110px;
-    padding-bottom: 110px;
-    background-color: lightslategray;
-}
+.logo2{
+  height: 60vh;
+  background-color: #E0115F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  letter-spacing: 0.5px;
+  text-align: center;
+  
 
-.new-rewards_inner {
-    max-width: 1080px;
-    margin: 0 auto;
-}
-
-.new-rewards_conts {
-    box-sizing: border-box;
-    width: calc(83.7% - 80px);
-    padding-right: 30px;
-    color: #fff;
-    letter-spacing: 0.5px;
 }
 
 .info-cont {
-  position: relative;
-    margin-bottom: 22px;
-   
+  margin-bottom: 22px;
 }
 
-.info-cont_txt {
-    margin-bottom: 12px;
+h2 {
+  margin-bottom: 12px;
 }
 
-h1{
+p {
+  font-size: 20px;
+  text-indent: 2em;
+}
+
+h1 a{
   font-size: 6em;
   width: 258px;
   color: white;
@@ -156,6 +155,7 @@ h1{
   top: 80px;
   left: 200px;
   animation: slide 2s ease-out;
+  text-decoration: none;
 }
 
 h2 {
@@ -168,13 +168,24 @@ h2 {
     margin: 0;
 }
 
+td {
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+
 @keyframes slide{
   from{
-    left:-100px;
-    opacity: 0;
+    left:-100px; /* 시작 지점에서 왼쪽으로 -100만큼 이동*/
+    opacity: 0; /* 시작 지점에서 투명도를 0으로 설정 */
   }
   to{
-     left: 200px;
+     left: 200px; /* 종료 지점에서 오른쪽으로 200px 이동 */
      opacity: 1;
   }
 }
@@ -182,222 +193,26 @@ h2 {
 @keyframes back{
   from{
     left: 200px;
-     opacity: 1;
+     opacity: 1; /* 시작 지점에서 투명도를 0으로 설정 */
 
   }
   to{
     left:-100px;
-    opacity: 0;
+    opacity: 0; /* 끝나는 지점에서 요소의 투명도를 0으로 설정 */
 
   }
 }
 
 .copyright {
     background-color: black;
-    font-size: 20px;
+    font-size: 15px;
    
-    padding-top: 15px;
+    padding-top: 20px;
     text-align: center;
     width: 100%;
 }
 
 
-[name="slide"]{
-  display: none;
-}
-
-.slidebox {
-  max-width: 100vw;
-  text-allign: left;
-  
-}
-
-.slidebox img {
-  width: 2500px;
-  height: 700px;
-
-}
-
-.slidebox .slidelist {
-  white-space: nowrap;
-  font-size: 0;
-  overflow: hidden;
-}
-
-.slidebox .slideitem {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-  transition: all 0.35s;
- 
-}
-
-
-.slidebox .slideitem label {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-label.left {
-  left: 20px;
-  background-color: white;
-  background-image: url("leftcursor.png");
-  background-position: center center;
-  background-size: 50%;
-  background-repeat: no-repeat;
-}
-
-label.right {
-  right: 20px;
-  background-color: white;
-  background-image: url("rightcursor.png");
-  background-position: center center;
-  background-size: 50%;
-  background-repeat: no-repeat;
-}
-
-@keyframes slide01 {
-  0% {
-    left: 0%;
+.logo2 + table {
+    margin-top: 0;
   }
-  23% {
-    left: 0%;
-  }
-  25% {
-    left: -100%;
-  }
-  48% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  73% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  98% {
-    left: -300%;
-  }
-  100% {
-    left: 0%;
-  }
-}
-
-@keyframes slide02 {
-  0% {
-    left: 0%;
-  }
-  23% {
-    left: 0%;
-  }
-  25% {
-    left: -100%;
-  }
-  48% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  73% {
-    left: -200%;
-  }
-  75% {
-    left: 100%;
-  }
-  98% {
-    left: 100%;
-  }
-  100% {
-    left: 0%;
-  }
-}
-
-@keyframes slide03 {
-  0% {
-    left: 0%;
-  }
-  23% {
-    left: 0%;
-  }
-  25% {
-    left: -100%;
-  }
-  48% {
-    left: -100%;
-  }
-  50% {
-    left: 200%;
-  }
-  73% {
-    left: 200%;
-  }
-  75% {
-    left: 100%;
-  }
-  98% {
-    left: 100%;
-  }
-  100% {
-    left: 0%;
-  }
-}
-
-@keyframes slide04 {
-  0% {
-    left: 0%;
-  }
-  23% {
-    left: 0%;
-  }
-  25% {
-    left: 300%;
-  }
-  48% {
-    left: 300%;
-  }
-  50% {
-    left: 200%;
-  }
-  73% {
-    left: 200%;
-  }
-  75% {
-    left: 100%;
-  }
-  98% {
-    left: 100%;
-  }
-  100% {
-    left: 0%;
-  }
-}
-
-[id="slide01"]:checked ~ .slidelist .slideitem {
-  transform: translateX(0);
-  animation: slide01 20s infinite;
-}
-
-[id="slide02"]:checked ~ .slidelist .slideitem {
-  transform: translateX(-100%);
-  animation: slide02 20s infinite;
-}
-
-[id="slide03"]:checked ~ .slidelist .slideitem {
-  transform: translateX(-200%);
-  animation: slide03 20s infinite;
-}
-
-[id="slide04"]:checked ~ .slidelist .slideitem {
-  transform: translateX(-300%);
-  animation: slide04 20s infinite;
-}
