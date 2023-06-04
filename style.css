@@ -73,7 +73,7 @@ body{
       font-size: 20px;}
 
 
-  .coffee {
+  .iframe_box {
   margin-left: 100px; /* 왼쪽 여백 */
   margin-top: 5px;/* 위쪽 여백 */
   margin-bottom: 50px; /* 아래쪽 여백 */
@@ -174,7 +174,8 @@ td {
 
 table {
   border-collapse: collapse;
-  width: 100%;
+  
+  margin: auto;
 }
 
 
@@ -215,4 +216,29 @@ table {
 
 .logo2 + table {
     margin-top: 0;
+  }
+
+
+
+
+.franchise-button {
+  width: 150px;
+  height: 150px;
+    position: absolute;
+    top: 40%;
+    right: 400px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: indianred;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .franchise-button:hover {
+    background-color: palegreen;
   }
