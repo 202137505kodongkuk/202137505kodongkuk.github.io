@@ -43,7 +43,7 @@ window.addEventListener("scroll", function() {
   let value = window.scrollY;
   console.log("scrollY", value);
 
-  if ((value > 6568 || value < 5040) && !initialScroll3) {
+  if ((value > 6400 || value < 5040) && !initialScroll3) {
     mainText3.style.animation = "back 2s ease-out forwards";
   } else {
     mainText3.style.animation = "slide 2s ease-out";
@@ -61,7 +61,7 @@ window.addEventListener("scroll", function() {
   let value = window.scrollY;
   console.log("scrollY", value);
 
-  if ((value > 6300 || value < 5868) && !initialScroll4) {
+  if ((value > 7500 || value < 5868) && !initialScroll4) {
     mainText4.style.animation = "back 2s ease-out forwards";
   } else {
     mainText4.style.animation = "slide 2s ease-out";
