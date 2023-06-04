@@ -7,7 +7,7 @@ window.addEventListener("scroll", function() { // 윈도우 객체에 스크롤 
   console.log("scrollY", value); // 현재 스크롤 위치를 콘솔에 출력
 
   // 만약 현재 스크롤 위치가 3900보다 크거나 2600보다 작고, initialScroll1이 false일 경우
-  if ((value > 3900 || value < 2600) && !initialScroll1) {
+  if ((value > 5040 || value < 3340) && !initialScroll1) {
     mainText1.style.animation = "back 2s ease-out forwards"; // mainText1 요소에 애니메이션 속성을 설정하여 뒤로 이동하는 애니메이션을 적용
   } else {
     mainText1.style.animation = "slide 2s ease-out"; // mainText1 요소에 애니메이션 속성을 설정하여 슬라이드하는 애니메이션을 적용
@@ -25,7 +25,7 @@ window.addEventListener("scroll", function() {
   let value = window.scrollY;
   console.log("scrollY", value);
 
-  if ((value > 4700 || value < 3400) && !initialScroll2) {
+  if ((value > 5840 || value < 4140) && !initialScroll2) {
     mainText2.style.animation = "back 2s ease-out forwards";
   } else {
     mainText2.style.animation = "slide 2s ease-out";
@@ -43,7 +43,7 @@ window.addEventListener("scroll", function() {
   let value = window.scrollY;
   console.log("scrollY", value);
 
-  if ((value > 5500 || value < 4200) && !initialScroll3) {
+  if ((value > 6568 || value < 5040) && !initialScroll3) {
     mainText3.style.animation = "back 2s ease-out forwards";
   } else {
     mainText3.style.animation = "slide 2s ease-out";
@@ -61,7 +61,7 @@ window.addEventListener("scroll", function() {
   let value = window.scrollY;
   console.log("scrollY", value);
 
-  if ((value > 6300 || value < 5000) && !initialScroll4) {
+  if ((value > 6300 || value < 5868) && !initialScroll4) {
     mainText4.style.animation = "back 2s ease-out forwards";
   } else {
     mainText4.style.animation = "slide 2s ease-out";
