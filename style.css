@@ -6,7 +6,7 @@ body{
 
 
 
-//상단바 스타일링 
+/*상단바 스타일링*/ 
     .navbar {
       background-color: black;
       color: white;
@@ -49,7 +49,7 @@ body{
       transition: color 0.3s, border-bottom-color 0.3s;
     }
 
-    .navbar-menu li a:before{//아랫 줄 나타나기
+    .navbar-menu li a:before{ /*아랫 줄 나타나기*/
       content: '';
       position: absolute;
       bottom: -2px;
