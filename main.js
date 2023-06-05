@@ -6,7 +6,7 @@ window.addEventListener("scroll", function() { // 윈도우 객체에 스크롤 
   let value = window.scrollY; // 현재 스크롤 위치를 value 변수에 할당
   console.log("scrollY", value); // 현재 스크롤 위치를 콘솔에 출력
 
-  // 만약 현재 스크롤 위치가 3900보다 크거나 2600보다 작고, initialScroll1이 false일 경우
+  // 만약 현재 스크롤 위치가 5040보다 크거나 3340보다 작고, initialScroll1이 false일 경우
   if ((value > 5040 || value < 3340) && !initialScroll1) {
     mainText1.style.animation = "back 2s ease-out forwards"; // mainText1 요소에 애니메이션 속성을 설정하여 뒤로 이동하는 애니메이션을 적용
   } else {
@@ -73,11 +73,11 @@ window.addEventListener("scroll", function() {
 });
 
 
-function gotoRandomAnchor() {
-    var anchors = document.querySelectorAll("h1 > a");
-    var randomIndex = Math.floor(Math.random() * anchors.length);
-    var randomAnchor = anchors[randomIndex];
-    randomAnchor.click();
+function gotoRandomAnchor() { 
+    var anchors = document.querySelectorAll("h1 > a"); // h1 태그 하위에 있는 모든 a 태그를 선택하여 anchors 변수에 할당
+    var randomIndex = Math.floor(Math.random() * anchors.length); // anchors 배열의 길이를 기준으로 랜덤한 값을 생성하여 randomIndex 변수에 할당
+    var randomAnchor = anchors[randomIndex]; // randomIndex를 사용하여 랜덤한 값에 해당하는 앵커 요소를 randomAnchor 변수에 할당
+    randomAnchor.click(); // randomAnchor 요소를 클릭하는 동작을 수행
   }
 
 
