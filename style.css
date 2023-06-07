@@ -182,23 +182,23 @@ table {
 
 @keyframes slide{
   from{
-    left:-100px; // 시작 지점에서 왼쪽으로 -100만큼 이동
+    right:-100px; // 시작 지점에서 오른쪽으로 -100만큼 이동
     opacity: 0; //시작 지점에서 투명도를 0으로 설정 
   }
   to{
-     left: 200px; // 종료 지점에서 오른쪽으로 200px 이동 
+     right: 200px; // 종료 지점에서 오른쪽으로 200px 이동 
      opacity: 1;
   }
 }
 
 @keyframes back{
   from{
-    left: 200px;
+    right: 200px;
      opacity: 1; // 시작 지점에서 투명도를 0으로 설정 
 
   }
   to{
-    left:-100px;
+    right:-100px;
     opacity: 0; // 끝나는 지점에서 투명도를 0으로 설정 
 
   }
