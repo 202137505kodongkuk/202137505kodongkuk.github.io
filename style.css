@@ -182,11 +182,11 @@ table {
 
 @keyframes slide{
   from{
-    right: -100px;// 시작 지점에서 오른쪽으로 -100만큼 이동, 오류가 뜹니다 죄송합니다
-    opacity: 0; //시작 지점에서 투명도를 0으로 설정 
+    right: -100px;
+    opacity: 0; 
   }
   to{
-     right: 200px; // 종료 지점에서 오른쪽으로 200px 이동 
+     right: 200px;
      opacity: 1;
   }
 }
@@ -194,12 +194,12 @@ table {
 @keyframes back{
   from{
     right: 200px;
-     opacity: 1; // 시작 지점에서 투명도를 1으로 설정 
+     opacity: 1; 
 
   }
   to{
     right: -100px;
-    opacity: 0; // 끝나는 지점에서 투명도를 0으로 설정 
+    opacity: 0;
 
   }
 }
