@@ -17,6 +17,7 @@ window.addEventListener("scroll", function() { // 윈도우 객체에 스크롤 
     initialScroll1 = false; // initialScroll1 값을 false로 변경
   }
 });
+mainText1.style.color="red"; // 임시로 하나만 변경하였습니다.  
 
 let mainText2 = document.getElementById("main-text2");
 let initialScroll2 = true;
